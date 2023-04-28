@@ -27,46 +27,11 @@ jobs:
           {
             "blocks": [
               {
-                "type": "context",
-                "elements": [
-                  {
-                    "type": "session",
-                    "text": {
-                      "type": "mrkdwn"
-                      "text": "*DipSA56 CI/CD Submission*"
-                    }
-                  }
-                ]
-              },
-              {
-                "type": "context",
-                "elements": [
-                  {
-                    "type": "plain_text",
-                    "text": "*Name:* Yap Wei Jie Jeremy",
-                    "emoji": true
-                  },
-                  {
-                    "type": "plain_text",
-                    "text": "*Email:* jeremy.yap27@gmail.com",
-                    "emoji": true
-                  }
-                ]
-              },
-              {
-                "type": "context",
-                "elements": [
-                  {
-                    "type": "plain_text",
-                    "text": "Matriculation: A0168106H",
-                    "emoji": true
-                  },
-                  {
-                    "type": "plain_text",
-                    "text": "*Repository:* https://github.com/goodalways/DipSA-CICD-56---Jeremy",
-                    "emoji": true
-                  }
-                ]
+                "type": "section",
+                "text": {
+                  "type": "mrkdwn",
+                  "text": "GitHub Action build result: ${{ job.status }}\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
+                }
               }
             ]
           }
