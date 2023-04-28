@@ -30,9 +30,11 @@ jobs:
                 "type": "context",
                 "elements": [
                   {
-                    "type": "plain_text",
-                    "text": "*DipSA56 CI/CD Submission*",
-                    "emoji": true
+                    "type": "session",
+                    "text": {
+                      "type": "mrkdwn"
+                      "text": "*DipSA56 CI/CD Submission*"
+                    }
                   }
                 ]
               },
