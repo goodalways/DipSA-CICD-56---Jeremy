@@ -30,7 +30,7 @@ jobs:
                 "type": "section",
                 "text": {
                   "type": "mrkdwn",
-                  "text": "You have a new request:"
+                  "text": "*GipSA 56 CI/CD Submission*"
                 }
               },
               {
