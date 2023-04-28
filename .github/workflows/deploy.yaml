@@ -32,6 +32,12 @@ jobs:
                   "type": "mrkdwn",
                   "text": "*Name:* Yap Wei Jie Jeremy"
                 }
+              },
+              {
+                "type": "section",
+                "text": {
+                  "type": "mrkdwn",
+                  "text": "*Email:* jeremy.yap27@gmail.com"
               }
             ]
           }
