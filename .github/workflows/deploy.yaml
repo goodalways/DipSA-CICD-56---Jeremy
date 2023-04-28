@@ -25,13 +25,52 @@ jobs:
         # For posting a rich message using Block Kit
         payload: |
           {
-            "text": "GitHub Action build result: ${{ job.status }}\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}",
+            {
             "blocks": [
               {
                 "type": "section",
                 "text": {
                   "type": "mrkdwn",
-                  "text": "GitHub Action build result: ${{ job.status }}\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
+                  "text": "*DipSA 56 CI/CD Submission*"
+                }
+              },
+              {
+                "type": "section",
+                "fields": [
+                  {
+                    "type": "mrkdwn",
+                    "text": "*Name:* Yap Wei Jie Jeremy"
+                  },
+                  {
+                    "type": "mrkdwn",
+                    "text": "*Email:* jeremy.yap27@gmail.com"
+                  },
+                  {
+                    "type": "mrkdwn",
+                    "text": "*Matriculation:* A0168106H"
+                  },
+                  {
+                    "type": "mrkdwn",
+                    "text": "*Repository:* https://github.com/goodalways/DipSA-CICD-56---Jeremy"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "text": {
+                  "type": "mrkdwn",
+                  "text": ${{vars.RAILWAYURL}}
+                },
+                "accessory": {
+                  "type": "button",
+                  "text": {
+                    "type": "plain_text",
+                    "text": "Go",
+                    "emoji": true
+                  },
+                  "value": "click_me_123",
+                  "url": ${{vars.RAILWAYURL}},
+                  "action_id": "button-action"
                 }
               }
             ]
