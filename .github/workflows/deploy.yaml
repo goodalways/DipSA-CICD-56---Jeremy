@@ -1,5 +1,9 @@
 name: My Workflow
-on: [push]
+on:
+  push:
+    branches:
+    - release/v[1-99].[0-9][0-9]
+    - release/v[1-99].[0-9]
 
 jobs:
   Deploy_this_ca:
