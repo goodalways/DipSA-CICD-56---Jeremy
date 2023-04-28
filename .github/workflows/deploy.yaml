@@ -31,12 +31,22 @@ jobs:
                 "elements": [
                   {
                     "type": "plain_text",
-                    "text": "Author: K A Applegate",
+                    "text": "DipSA56 CI/CD Submission",
+                    "emoji": true
+                  }
+                ]
+              },
+              {
+                "type": "context",
+                "elements": [
+                  {
+                    "type": "plain_text",
+                    "text": "Name: Yap Wei Jie Jeremy",
                     "emoji": true
                   },
                   {
                     "type": "plain_text",
-                    "text": "Author: K A Applegate",
+                    "text": "Email: jeremy.yap27@gmail.com",
                     "emoji": true
                   }
                 ]
