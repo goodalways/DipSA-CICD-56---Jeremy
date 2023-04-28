@@ -1,0 +1,42 @@
+name: My Workflow
+on: [push]
+
+jobs:
+  Deploy_this_ca:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: download repo
+      uses: actions/checkout@v3
+
+    - name: check directory
+      run: ls -l
+
+    - name: deploy railway
+      uses: bervProject/railway-deploy@main
+      with:
+        railway_token: ${{ secrets.RAILWAY_TOKEN }}
+        service: "my-service"
+
+    - name: Send custom JSON data to Slack workflow
+      id: slack
+      uses: slackapi/slack-github-action@v1.23.0
+      with:
+        # For posting a rich message using Block Kit
+        payload: |
+          {
+            "text": "GitHub Action build result: ${{ job.status }}\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}",
+            "blocks": [
+              {
+                "type": "section",
+                "text": {
+                  "type": "mrkdwn",
+                  "text": "GitHub Action build result: ${{ job.status }}\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
+                }
+              }
+            ]
+          }
+      env:
+        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL}}
+        SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
+        
