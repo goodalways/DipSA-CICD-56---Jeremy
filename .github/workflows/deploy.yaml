@@ -50,7 +50,7 @@ jobs:
                   },
                   {
                     "type": "mrkdwn",
-                    "text": "*Repository* ${{ github.repository}}"
+                    "text": "*Repository* https://github.com/${{ github.repository}}"
                   }
                 ]
               },
