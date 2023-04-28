@@ -38,7 +38,7 @@ jobs:
                 "fields": [
                   {
                     "type": "mrkdwn",
-                    "text": "*Type:*\nComputer (laptop)"
+                    "text": "*Name:* Yap Wei Jie Jeremy"
                   },
                   {
                     "type": "mrkdwn",
