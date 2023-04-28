@@ -27,50 +27,29 @@ jobs:
           {
             "blocks": [
               {
-                "type": "section",
-                "text": {
-                  "type": "mrkdwn",
-                  "text": "*DipSA 56 CI/CD Submission*"
-                }
-              },
-              {
-                "type": "section",
-                "fields": [
+                "type": "context",
+                "elements": [
                   {
-                    "type": "mrkdwn",
-                    "text": "*Name:* Yap Wei Jie Jeremy"
+                    "type": "plain_text",
+                    "text": "Author: K A Applegate",
+                    "emoji": true
                   },
                   {
-                    "type": "mrkdwn",
-                    "text": "*Email:* jeremy.yap27@gmail.com"
-                  },
-                  {
-                    "type": "mrkdwn",
-                    "text": "*Matriculation:* A0168106H"
-                  },
-                  {
-                    "type": "mrkdwn",
-                    "text": "*Repository:* https://github.com/goodalways/DipSA-CICD-56---Jeremy"
+                    "type": "plain_text",
+                    "text": "Author: K A Applegate",
+                    "emoji": true
                   }
                 ]
               },
               {
-                "type": "section",
-                "text": {
-                  "type": "mrkdwn",
-                  "text": ${{vars.RAILWAYURL}}
-                },
-                "accessory": {
-                  "type": "button",
-                  "text": {
+                "type": "context",
+                "elements": [
+                  {
                     "type": "plain_text",
-                    "text": "Go",
+                    "text": "Author: K A Applegate",
                     "emoji": true
-                  },
-                  "value": "click_me_123",
-                  "url": ${{vars.RAILWAYURL}},
-                  "action_id": "button-action"
-                }
+                  }
+                ]
               }
             ]
           }
