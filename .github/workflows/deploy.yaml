@@ -30,14 +30,29 @@ jobs:
                 "type": "section",
                 "text": {
                   "type": "mrkdwn",
-                  "text": "*Name:* Yap Wei Jie Jeremy"
+                  "text": ""
                 }
               },
               {
                 "type": "section",
-                "text": {
-                  "type": "mrkdwn",
-                  "text": "*Email:* jeremy.yap27@gmail.com"
+                "fields": [
+                  {
+                    "type": "mrkdwn",
+                    "text": "*Name:* Yap Wei Jie Jeremy
+                  },
+                  {
+                    "type": "mrkdwn",
+                    "text": "*Email:* jeremy.yap27@gmail.com
+                  },
+                  {
+                    "type": "mrkdwn",
+                    "text": "*Matriculation:* A0168106H"
+                  },
+                  {
+                    "type": "mrkdwn",
+                    "text": "*Repository*"
+                  }
+                ]
               }
             ]
           }
