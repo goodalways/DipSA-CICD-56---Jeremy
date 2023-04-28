@@ -58,13 +58,13 @@ jobs:
                 "type": "section",
                 "text": {
                   "type": "mrkdwn",
-                  "text": "This is a section block with a button."
+                  "text": "${{vars.RAILWAYURL}}"
                 },
                 "accessory": {
                   "type": "button",
                   "text": {
                     "type": "plain_text",
-                    "text": "Click Me",
+                    "text": "Go",
                     "emoji": true
                   },
                   "value": "click_me_123",
