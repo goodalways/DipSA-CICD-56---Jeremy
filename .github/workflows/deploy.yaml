@@ -50,7 +50,7 @@ jobs:
                   },
                   {
                     "type": "mrkdwn",
-                    "text": "*Repository* https://github.com/goodalways/DipSA-CICD-56---Jeremy"
+                    "text": "*Repository* ${{ github.repository_url }}"
                   }
                 ]
               },
@@ -68,7 +68,7 @@ jobs:
                     "emoji": true
                   },
                   "value": "click_me_123",
-                  "url": "https://google.com",
+                  "url": "${{vars.RAILWAYURL}}",
                   "action_id": "button-action"
                 }
               }
