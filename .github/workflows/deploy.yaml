@@ -16,7 +16,7 @@ jobs:
       uses: bervProject/railway-deploy@main
       with:
         railway_token: ${{ secrets.RAILWAY_TOKEN }}
-        service: "my-service"
+        service: "ruthless-spade"
 
     - name: Send custom JSON data to Slack workflow
       id: slack
