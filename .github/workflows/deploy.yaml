@@ -7,6 +7,7 @@ on:
 
 jobs:
   Deploy_this_ca:
+    if: "!startsWith(github.event.head_commit.message, '#NORUN')"
     runs-on: ubuntu-latest
 
     steps:
