@@ -31,10 +31,11 @@ jobs:
           {
             "blocks": [
               {
-                "type": "section",
+                "type": "header",
                 "text": {
-                  "type": "mrkdwn",
-                  "text": "*GipSA 56 CI/CD Submission*"
+                  "type": "plain_text",
+                  "text": "GipSA 56 CI/CD Submission",
+                  "emoji": true
                 }
               },
               {
